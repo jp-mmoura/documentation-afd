@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #555;
@@ -175,4 +174,76 @@ footer .footer-container p {
 footer .footer-container a {
     font-size: 16px;
     margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 1rem;
+        margin-top: 80px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    .download-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    .header-container {
+        padding: 0 0.5rem;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    section p,
+    section ul {
+        font-size: 0.9rem;
+    }
+
+    .download-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+
+    footer p,
+    footer a {
+        font-size: 0.9rem;
+    }
 }
