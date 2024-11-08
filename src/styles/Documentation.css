@@ -20,48 +20,50 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 0;
+    flex: 1;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline-block;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li button {
-    background: none; 
-    border: none; 
-    color: #fff; 
+    background: none;
+    border: none;
+    color: #fff;
     font-size: 1rem;
     padding: 5px 10px;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 nav ul li button:hover {
-    background-color: #45a049; 
-    color: #fff; 
+    background-color: #45a049;
+    border-radius: 5px;
 }
 
 section {
-    margin-top: 100px; 
+    margin-top: 100px;
     padding: 2rem;
     background-color: #fff;
     border-radius: 8px;
@@ -116,13 +118,13 @@ ul {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .download-btn:hover {
     background-color: #45a049;
-    color: #0066cc; 
-    transform: scale(1.1); 
+    color: #0066cc;
+    transform: scale(1.1);
 }
 
 footer {
@@ -132,7 +134,7 @@ footer {
     text-align: center;
     margin-top: 2rem;
     width: 100%;
-    border-top: 3px solid #444; 
+    border-top: 3px solid #444;
     font-family: 'Arial', sans-serif;
 }
 
@@ -142,13 +144,13 @@ footer p {
 }
 
 footer a {
-    color: #f1c40f; 
+    color: #f1c40f;
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover {
-    color: #e67e22; 
+    color: #e67e22;
     text-decoration: underline;
 }
 
@@ -164,7 +166,7 @@ footer .footer-container {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 footer .footer-container p {
@@ -176,6 +178,7 @@ footer .footer-container a {
     margin-top: 0.5rem;
 }
 
+/* Ajustes para dispositivos menores */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
