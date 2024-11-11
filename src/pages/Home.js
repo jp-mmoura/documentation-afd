@@ -61,17 +61,17 @@ const Home = () => (
                     
                     <div className="windows-download">
                         <h5><FaWindows /> Windows</h5>
-                        <p className="download-text">Baixe o executável diretamente:</p>
-                        <a href="URL_DO_EXECUTÁVEL" download>
+                        <p>Baixe o executável diretamente:</p>
+                        <a href="/identificador_gui.exe" download>
                             <button className="github-btn">
-                                <FaDownload /> Baixar
+                                <FaDownload /> Baixar para Windows
                             </button>
                         </a>
                     </div>
 
                     <div className="other-platforms">
                         <h5><FaLinux /> Linux & <FaApple /> macOS</h5>
-                        <p className="download-text">Para Linux e macOS, você pode executar o projeto seguindo as instruções no nosso repositório:</p>
+                        <p>Para Linux e macOS, você pode executar o projeto seguindo as instruções no nosso repositório:</p>
                         <a 
                             href="https://github.com/jp-mmoura/afd_linguagensFormaisEAutomatos#readme" 
                             target="_blank" 
