@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Section from '../components/Section';
 import Footer from '../components/Footer';
 import '../styles/Documentation.css';
+import { FaDownload, FaGithub, FaWindows, FaLinux, FaApple } from 'react-icons/fa';
 
 const Home = () => (
     <>
@@ -55,14 +56,34 @@ const Home = () => (
             id="download"
             title="Faça o Download do nosso AFD!"
             content={
-                <>
-                    <h4>Baixar o Executável</h4>
-                    <p>Você pode baixar a versão do simulador diretamente clicando no botão abaixo:</p>
-                    <a href="URL_DO_EXECUTÁVEL" download>
-                        <button className="download-btn">Baixar Simulador</button>
-                    </a>
-                    <p>Após o download, basta executar o arquivo para utilizar o simulador localmente em sua máquina.</p>
-                </>
+                <div className="download-section">
+                    <h4>Download e Instalação</h4>
+                    
+                    <div className="windows-download">
+                        <h5><FaWindows /> Windows</h5>
+                        <p className="download-text">Baixe o executável diretamente:</p>
+                        <a href="URL_DO_EXECUTÁVEL" download>
+                            <button className="github-btn">
+                                <FaDownload /> Baixar
+                            </button>
+                        </a>
+                    </div>
+
+                    <div className="other-platforms">
+                        <h5><FaLinux /> Linux & <FaApple /> macOS</h5>
+                        <p className="download-text">Para Linux e macOS, você pode executar o projeto seguindo as instruções no nosso repositório:</p>
+                        <a 
+                            href="https://github.com/jp-mmoura/afd_linguagensFormaisEAutomatos#readme" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="github-link"
+                        >
+                            <button className="github-btn">
+                                <FaGithub /> Ver no GitHub
+                            </button>
+                        </a>
+                    </div>
+                </div>
             }
         />
 
